@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
 :root {
-  --orange-color: rgb(249, 168, 133);
+  --bg-color: rgb(249, 168, 133);
   --text-color: rgb(198, 198, 198);
 }
 * {
@@ -50,10 +50,7 @@ a:hover {
   transform: translateY(-4rem);
   transform: translateX(8rem);
 }
-/* .side-rings {
-  margin-top: 30vh;
-  height: 12rem;
-} */
+
 #ring-1,
 #ring-3 {
   height: 15rem;
@@ -109,8 +106,9 @@ a:hover {
 }
 .section-6 .orange-bg {
   margin-top: 30vh;
-  background-color: var(--orange-color);
+  background-color: var(--bg-color);
   height: 40vh;
+  width: 100vw;
 }
 .section-8 img {
   height: 12rem;
@@ -146,7 +144,7 @@ footer {
   width: 100vw;
 }
 .orange {
-  color: var(--orange-color);
+  color: var(--bg-color);
   font-size: 1.2rem;
 }
 footer p {
@@ -167,4 +165,202 @@ footer p {
 }
 .last-thing {
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav-links {
+    font-size: 0.8rem;
+  }
+  .section-5 {
+    position: absolute;
+    top: 60rem;
+    right: 20rem;
+  }
+  .section-3 h1 {
+    color: var(--text-color);
+    opacity: 0.3;
+    font-size: 6rem;
+    position: absolute;
+    top: 40vh;
+    left: 15vw;
+  }
+  .section-5 img {
+    height: 18rem;
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .logo {
+    height: 1rem;
+  }
+  .nav-links {
+    font-size: 0.8rem;
+    display: block;
+    transform: translateX(-3rem);
+  }
+  .nav-icons {
+    height: 1rem;
+  }
+  .nav-icons-2 {
+    height: 1rem;
+  }
+  #ring-2 {
+    height: 15rem;
+    transform: translateY(-4rem);
+    transform: translateX(8rem);
+  }
+  #ring-1,
+  #ring-3 {
+    height: 12rem;
+    margin-top: 25vh;
+  }
+  .section-5 {
+    position: absolute;
+    top: 55rem;
+    left: 0.1rem;
+  }
+  .section-5 img {
+    height: 18rem;
+    width: 15rem;
+  }
+  .square-images li img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .section-3 b {
+    font-size: 6rem;
+  }
+  .footer-links li {
+    font-size: 1rem;
+  }
+  .payment-methods li img {
+    height: 1.5rem;
+    width: 3.5rem;
+  }
+  footer {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-5 {
+    left: 3.5rem;
+  }
+  .section-5 img {
+    height: 14rem;
+    width: 12rem;
+  }
+  .section-8 img {
+    height: 10rem;
+    width: 8rem;
+  }
+  .section-3 b {
+    font-size: 5.4rem;
+  }
+  .footer-links li {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-5 {
+    left: 4.5rem;
+  }
+  .section-5 img {
+    height: 12rem;
+    width: 10rem;
+  }
+  .section-8 img {
+    height: 10rem;
+    width: 8rem;
+  }
+  .section-3 b {
+    font-size: 5.2rem;
+  }
+  .footer-links li {
+    font-size: 0.7rem;
+  }
+  .square-images li img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .payment-methods li img {
+    height: 1.5rem;
+    width: 3rem;
+  }
+  .payment-methods li {
+    margin: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav-icons {
+    height: 0.8rem;
+  }
+  .nav-icons-2 {
+    height: 0.8rem;
+  }
+  .section-2 li img {
+    height: 2rem;
+    padding: 3px;
+  }
+  .section-2 p img {
+    height: 2rem;
+    padding: 3px;
+  }
+
+  #ring-2 {
+    height: 12rem;
+  }
+  #ring-1,
+  #ring-3 {
+    height: 10rem;
+    margin-top: 25vh;
+  }
+  .section-3 b {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav-icons {
+    height: 0.8rem;
+  }
+  .nav-icons-2 {
+    height: 0.8rem;
+  }
+  .section-2 li img {
+    height: 2rem;
+    padding: 3px;
+  }
+  .section-2 p img {
+    height: 2rem;
+    padding: 3px;
+  }
+
+  #ring-2 {
+    height: 12rem;
+  }
+  #ring-1,
+  #ring-3 {
+    height: 10rem;
+    margin-top: 25vh;
+  }
+  .section-3 b {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    height: 1.5rem;
+  }
+  nav ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
+  .section-3 h1 {
+    font-size: 1rem;
+  }
 }
