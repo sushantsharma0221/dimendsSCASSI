@@ -6,361 +6,188 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-body {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+
+.my-navbar {
+  font-family: "Poppins";
+  color: white;
 }
-nav {
-  margin-top: 5vh;
+.my-navbar li i {
+  font-size: 1.5rem;
 }
-nav ul {
-  display: flex;
-  list-style-type: none;
-  flex-wrap: wrap;
+.navbar-toggler-icon {
+  color: rgb(0, 0, 0);
 }
-a {
+.navbar a,
+.section-1 a {
   text-decoration: none;
   color: black;
 }
-a:hover {
+.navbar a:hover,
+.section-1 a :hover {
   color: black;
 }
-.nav-links {
-  font-size: 1.1rem;
+.navbar ul li {
+  font-size: large;
 }
-
-.logo {
-  height: 1.5rem;
-  transform: translateY(-0.7rem);
-}
-.nav-icons {
-  height: 1.3rem;
-}
-.section-1 ul {
-  display: flex;
-  list-style-type: none;
-}
-.nav-icons-2 {
-  height: 1.5rem;
-}
-#ring-2 {
-  height: 18rem;
-  transform: translateY(-4rem);
-  transform: translateX(8rem);
-}
-
-#ring-1,
-#ring-3 {
+.ring2 {
   height: 15rem;
-  margin-top: 25vh;
+  width: 15rem;
+  transform: translateY(-18rem);
 }
-.section-3 h1 {
-  color: var(--text-color);
-  opacity: 0.3;
-  font-size: 8rem;
-  position: absolute;
-  top: 25vh;
-  left: 10vw;
+.ring1 {
+  height: 9rem;
+  width: 9rem;
 }
-.section-2 li {
-  list-style-type: none;
-}
-.section-2 li img {
-  height: 3rem;
-  padding: 5px;
-}
-.section-2 p img {
-  height: 3rem;
-  padding: 5px;
+.ring3 {
+  height: 12rem;
+  width: 12rem;
 }
 
-.limited-time-text {
-  color: var(--text-color);
-  font-size: 1rem;
+.ring2:hover,
+.ring1:hover,
+.ring3:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.4s;
 }
-.view-details-btn,
-.sign-up-btn {
+
+.section-2 {
+  margin-top: 30vh;
+}
+.section-3 p {
+  position: absolute;
+  font-size: 8rem;
+  color: rgba(232, 232, 232, 0.55);
+  font-weight: bolder;
+  top: 11rem;
+  left: 12rem;
+  z-index: -1;
+  font-family: "Poppins";
+}
+.section-2 h6 {
+  color: rgb(204, 204, 204);
+}
+.my-text {
+  font-family: "Poppins";
+}
+.view-details-btn {
   background-color: black;
   color: white;
-  width: 15rem;
-  border-radius: 20px;
+  padding: 8px 50px;
+  border-radius: 50px;
   border: none;
-  height: 2.4rem;
-  letter-spacing: 1px;
+}
+.section-2 ul li {
+  list-style-type: none;
+  height: 3rem;
+  width: 3rem;
+}
+
+.section-4,
+.section-7 {
+  font-family: "Poppins";
+  margin-top: 5rem;
+}
+.section-7 {
+  font-family: "Poppins";
+  margin-top: 10rem;
 }
 .section-4 p,
 .section-7 p {
-  color: var(--text-color);
-  letter-spacing: 1px;
+  color: rgb(176, 175, 175);
 }
-.section-5 {
-  position: absolute;
-  top: 60rem;
-  left: 14rem;
+.other-rings {
+  top: 4rem;
+  z-index: 10;
+  position: relative;
 }
-.section-5 img {
-  height: 18rem;
-  width: 15rem;
-}
-.section-6 .orange-bg {
-  margin-top: 30vh;
+.my-bg {
   background-color: var(--bg-color);
-  height: 40vh;
   width: 100vw;
+  height: 40vh;
+  position: absolute;
+  top: 92rem;
 }
-.section-8 img {
-  height: 12rem;
-  width: 10rem;
+.section-9 {
+  margin-top: 10rem;
+  font-family: "Poppins";
 }
 .section-9 p {
-  color: var(--text-color);
-  font-size: 1.2rem;
+  color: rgb(160, 160, 160);
+  font-size: 1.3rem;
 }
-.section-9 input {
-  border: none;
-  border-bottom: 2px solid var(--text-color);
-  width: 65%;
-  color: var(--text-color);
+input {
+  font-size: 1.3rem;
   outline: none;
-}
-.section-9-img {
-  height: 10rem;
-  width: 10rem;
-}
-.square-images li {
-  list-style-type: none;
-  margin: 3rem 0rem;
-}
-.square-images li img {
-  height: 10rem;
-  width: 10rem;
+  border: none;
+  border-bottom: 2px solid rgb(196, 196, 196);
+  color: gray;
+  min-width: 20rem;
 }
 footer {
   color: var(--text-color);
   background-color: rgba(243, 243, 243, 0.74);
-  height: 70vh;
-  width: 100vw;
 }
-.orange {
+.footer-text1 {
+  font-size: 1.2rem;
   color: var(--bg-color);
+  font-family: "Poppins";
+}
+.footer-text2 {
   font-size: 1.2rem;
+  font-family: "Poppins";
 }
-footer p {
-  letter-spacing: 1px;
-  font-size: 1.2rem;
+.footer-links a {
+  text-decoration: none;
+  color: gray;
 }
-.footer-links li {
-  list-style-type: none;
-  margin: 1rem;
-}
-.payment-methods li {
-  list-style-type: none;
-  margin: 1rem;
-}
-.payment-methods li img {
-  height: 2rem;
-  width: 5rem;
-}
-.last-thing {
-  font-size: 0.8rem;
-}
-
-@media screen and (max-width: 1280px) {
-  .nav-links {
-    font-size: 0.8rem;
-  }
-  .section-5 {
-    position: absolute;
-    top: 60rem;
-    right: 20rem;
-  }
-  .section-3 h1 {
-    color: var(--text-color);
-    opacity: 0.3;
-    font-size: 6rem;
-    position: absolute;
-    top: 40vh;
-    left: 15vw;
-  }
-  .section-5 img {
-    height: 18rem;
-    width: 15rem;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .logo {
-    height: 1rem;
-  }
-  .nav-links {
-    font-size: 0.8rem;
-    display: block;
-    transform: translateX(-3rem);
-  }
-  .nav-icons {
-    height: 1rem;
-  }
-  .nav-icons-2 {
-    height: 1rem;
-  }
-  #ring-2 {
-    height: 15rem;
-    transform: translateY(-4rem);
-    transform: translateX(8rem);
-  }
-  #ring-1,
-  #ring-3 {
-    height: 12rem;
-    margin-top: 25vh;
-  }
-  .section-5 {
-    position: absolute;
-    top: 55rem;
-    left: 0.1rem;
-  }
-  .section-5 img {
-    height: 18rem;
-    width: 15rem;
-  }
-  .square-images li img {
-    height: 8rem;
-    width: 8rem;
-  }
-  .section-3 b {
-    font-size: 6rem;
-  }
-  .footer-links li {
-    font-size: 1rem;
-  }
-  .payment-methods li img {
-    height: 1.5rem;
-    width: 3.5rem;
-  }
-  footer {
-    height: 80vh;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .section-5 {
-    left: 3.5rem;
-  }
-  .section-5 img {
-    height: 14rem;
-    width: 12rem;
-  }
-  .section-8 img {
-    height: 10rem;
-    width: 8rem;
-  }
-  .section-3 b {
-    font-size: 5.4rem;
-  }
-  .footer-links li {
-    font-size: 0.7rem;
-  }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  outline: none;
+  background-color: var(--bg-color);
+  border: 1px solid rgb(192, 192, 192);
+  color: white;
+  cursor: pointer;
+  padding: 15px 16px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all ease-in-out 0.2s;
 }
 
 @media screen and (max-width: 900px) {
-  .section-5 {
-    left: 4.5rem;
+  .section-3 p {
+    display: none;
   }
-  .section-5 img {
-    height: 12rem;
-    width: 10rem;
+  .ring2 {
+    transform: translateY(0);
   }
-  .section-8 img {
-    height: 10rem;
-    width: 8rem;
+  .section-2 ul li {
+    list-style-type: none;
+    height: 2.2rem;
+    width: 2.2rem;
   }
-  .section-3 b {
-    font-size: 5.2rem;
-  }
-  .footer-links li {
-    font-size: 0.7rem;
-  }
-  .square-images li img {
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
     height: 7rem;
     width: 7rem;
   }
-  .payment-methods li img {
-    height: 1.5rem;
-    width: 3rem;
-  }
-  .payment-methods li {
-    margin: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .nav-icons {
-    height: 0.8rem;
-  }
-  .nav-icons-2 {
-    height: 0.8rem;
-  }
-  .section-2 li img {
-    height: 2rem;
-    padding: 3px;
-  }
-  .section-2 p img {
-    height: 2rem;
-    padding: 3px;
-  }
-
-  #ring-2 {
-    height: 12rem;
-  }
-  #ring-1,
-  #ring-3 {
-    height: 10rem;
-    margin-top: 25vh;
-  }
-  .section-3 b {
-    font-size: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .nav-icons {
-    height: 0.8rem;
-  }
-  .nav-icons-2 {
-    height: 0.8rem;
-  }
-  .section-2 li img {
-    height: 2rem;
-    padding: 3px;
-  }
-  .section-2 p img {
-    height: 2rem;
-    padding: 3px;
-  }
-
-  #ring-2 {
-    height: 12rem;
-  }
-  #ring-1,
-  #ring-3 {
-    height: 10rem;
-    margin-top: 25vh;
-  }
-  .section-3 b {
-    font-size: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    height: 1.5rem;
-  }
-  nav ul {
+  .section-2 ul li {
     list-style-type: none;
-    flex-wrap: wrap;
+    height: 2rem;
+    width: 2rem;
   }
-  .section-3 h1 {
+
+  .navbar-toggler-icon {
     font-size: 1rem;
+  }
+  .section-1 img {
+    height: 1.2rem;
+    width: 1.2rem;
   }
 }
